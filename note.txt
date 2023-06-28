@@ -1,2 +1,19 @@
 docker build --tag node-docker:v2.1 .
 docker run node-docker:v2.1
+-------------------------------------------------------
+https://octopus.com/blog/using-ubuntu-docker-image
+docker build --tag my-ubuntu:v0.1 .
+docker run -p 4001:4001 my-ubuntu:v0.1 .
+docker run -p 4001:4001 my-ubuntu:v0.2 .
+
+sudo docker run -p 4001:4001 my-ubuntu:v0.1 -ti --rm ubuntu /bin/bash
+
+docker exec -it 79fe645bced3 /bin/bash
+
+docker start -i 79fe645bced3
+
+-------------------------------------------------------
+https://www.digitalocean.com/community/tutorials/apache-web-server-dockerfile
+docker run --name my-apache -d -p 80:80 my-ubuntu:v0.4
+
+docker run --name my-apache -it --rm -p 8080:80 my-ubuntu:v0.2
