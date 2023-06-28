@@ -1,11 +1,12 @@
-const express = require('express')
-const app = express()
-const port = 8080
+const express = require('express');
+const app = express();
+const port = 8080;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  console.log("Hello Root!!");
+  res.json('Hello World!');
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`App started on port ${port}`);
 })
