@@ -1,0 +1,23 @@
+{
+  "name": "aws-ecs-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ec-sys/aws-ecs-sample.git"
+  },
+  "author": "long.dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ec-sys/aws-ecs-sample/issues"
+  },
+  "homepage": "https://github.com/ec-sys/aws-ecs-sample#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
