@@ -9,3 +9,5 @@ node_modules/
 .DS_Store
 .scannerwork/
 package-lock.json
+Dockerfile
+docker/
