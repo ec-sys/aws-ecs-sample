@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "default-service": "set SERVER_PORT=8080 && node index.js",
+    "user-service": "set SERVER_PORT=8081 && node index.js",
+    "email-service": "set SERVER_PORT=8082 && node index.js"
   },
   "repository": {
     "type": "git",

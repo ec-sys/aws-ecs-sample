@@ -21,3 +21,7 @@ docker run --name my-apache -it --rm -p 8080:80 my-ubuntu:v0.2
 docker exec -i -t 29e81505e5d6 /bin/bash
 
 docker run --name my-docker-1  -p 8080:8080 -d node-docker:0.1
+
+docker build --tag longdd90jp/aws-esc:user.1.0 .
+
+docker run --name user-service -it --rm -p 8081:8081 longdd90jp/aws-esc:user.1.0

@@ -21,6 +21,7 @@
 
 FROM node:14.5.0-alpine
 ENV NODE_ENV=production
+ENV SERVER_PORT=8080
 
 WORKDIR /app
 
@@ -30,6 +31,7 @@ RUN npm install --production
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 8080 8081 8082
 
+#CMD ["npm", "run", "email-service"]
 CMD ["node", "index.js"]
