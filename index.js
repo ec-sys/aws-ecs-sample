@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   console.log("Hello Root!!");
 
   res.json({
-    serviceName: 'LongDD_JP Demo ECS',
+    serviceName: 'LongDD_JP Demo ECS Ver2',
     clientIp: clientIp,
     elbIp: elbIp,
     containerIp: containerIp,
